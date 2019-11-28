@@ -1,0 +1,139 @@
+{
+   "attr" : [
+      {
+         "name" : "height",
+         "type" : "double",
+         "value" : 1
+      },
+      {
+         "name" : "velocity",
+         "type" : "double",
+         "value" : 0
+      },
+      {
+         "name" : "nextTime",
+         "type" : "double",
+         "value" : 2
+      },
+      {
+         "name" : "outFile",
+         "type" : "ofstream",
+         "value" : 0
+      },
+      {
+         "name" : "time",
+         "type" : "double",
+         "value" : 0
+      },
+      {
+         "name" : "phase",
+         "type" : "int",
+         "value" : 0
+      },
+      {
+         "name" : "type",
+         "type" : "int",
+         "value" : -1
+      },
+      {
+         "name" : "isDropped",
+         "type" : "bool",
+         "value" : "false"
+      }
+   ],
+   "className" : "CherryBomb",
+   "doubleNum" : 3,
+   "equition" : [
+      {
+         "name" : "height",
+         "type" : "var",
+         "value" : "velocity"
+      },
+      {
+         "name" : "velocity",
+         "type" : "para",
+         "value" : "-9.8"
+      },
+      {
+         "name" : "time",
+         "type" : "para",
+         "value" : "1"
+      }
+   ],
+   "func" : [
+      {
+         "name" : "getPhase()",
+         "type" : "int",
+         "value" : "return phase;"
+      }
+   ],
+   "input" : [
+      {
+         "type" : "1",
+         "vars" : [
+            {
+               "name" : "isDropped",
+               "order" : "1",
+               "type" : "bool"
+            },
+            {
+               "name" : "phase",
+               "order" : "0",
+               "type" : "int"
+            }
+         ]
+      },
+      {
+         "type" : "0",
+         "vars" : [
+            {
+               "name" : "height",
+               "order" : "0",
+               "type" : "double"
+            }
+         ]
+      }
+   ],
+   "output" : [
+      {
+         "port" : [
+            {
+               "data" : [
+                  {
+                     "dataType" : "double",
+                     "order" : "1",
+                     "var" : "height"
+                  },
+                  {
+                     "dataType" : "double",
+                     "order" : "0",
+                     "var" : "velocity"
+                  }
+               ],
+               "type" : "0"
+            },
+            {
+               "data" : [
+                  {
+                     "dataType" : "double",
+                     "order" : "0",
+                     "var" : "height"
+                  }
+               ],
+               "type" : "1"
+            }
+         ],
+         "portId" : "0"
+      }
+   ],
+   "simPara" : [
+      {
+         "fileTail" : ".csv",
+         "intError" : "1E-4",
+         "intMethod" : "corrected_euler",
+         "stepSize" : "0.01",
+         "zeroPointError" : "1E-8"
+      }
+   ],
+   "stateNum" : 1
+}
