@@ -72,8 +72,8 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>C:\Users\wxq\Desktop\adevs-3.3\include;C:\Users\wxq\Desktop\json解析\json解析\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Users\wxq\Desktop\json解析\json解析\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>E:\0-PHD\建模语言\代码\json解析\json_Analysis\json解析\include;$(IncludePath)</IncludePath>
+    <LibraryPath>E:\0-PHD\建模语言\代码\json解析\json_Analysis\json解析\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
